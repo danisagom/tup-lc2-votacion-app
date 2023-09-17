@@ -4,23 +4,25 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sección de informes</title>
-    <link rel="shortcut icon" type="image/png" href="img/icons/favicon-16x16.png">
+    <title>Sistema de Publicación de Resultados Electorales</title>
+    <link rel="shortcut icon" type="image/png" href="img/icons/favicon-16x16.png" />
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/pages/informes.css">
+    <link rel="stylesheet" href="css/cammon.css" >
+    <link rel="stylesheet" href="css/pages/informes.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" >
 </head>
 
 <body>
 
      <!--Barra de logo portal-->
     <header>
-        <div class="header-page"><a href="index.html"><img src="img/Logo_DINE_negativo.png" alt="logo" class="logo"></a></div>
+        <div id="logo-bar"><a href="index.html"><img id="logo-dine" src="img/Logo_DINE_negativo.png" alt="logo" class="logo"></a></div>
         <!--Barra de menú principal-->
-        <div>
-            <a href="paso.html"><button>PASO</button></a>
-            <a href="generales.html"><button>GENERALES</button></a>
-            <a href="index.html"><button>INICIO</button></a>
+        <div id="menu-bar">
+            <div><p id="consultar">Consultar:</p></div>
+            <div><a href="paso.html"><button id="paso-button">PASO</button></a></div>
+            <div><a href="generales.html"><button id="gen-button">GENERALES</button></a></div>
+            <div><a href="index.html"><button id="init-button">INICIO</button></a></div>
         </div>
     </header>
 
@@ -46,13 +48,11 @@
     <!--Pie de página-->
     <footer>
         <div id="cont-footer">
-            <div id="imgs-footer">
-                <img src="img/icons/Ministerio-del-Interior_pluma.1ab9a7a7.png" alt="logo" class="logo">
-                <img src="img/icons/Logo_DINE_negativo.a88f983e.png" alt="logo" class="logo">
-                <img src="img/icons/logos_001-10.4430c8d5.png" alt="logo" class="logo">
-            </div>
-            <div id="text-footer">
-                <p>“Resultados Provisorios en base a telegramas recibidos (Art. 43 Ley 26571 y Art. 105 Ley 19945). Los porcentajes de las agrupaciones políticas son calculados sobre los votos válidos (PASO) conforme al art. 45 Ley 26.571 y afirmativos (Generales). No se incluyen los votos correspondientes a los electores residentes en el exterior ni privados de la libertad. Al usar este sitio usted acepta los <a href="página_en_blanco.html">Términos y Condiciones</a>.”</p>
+            <div class="logo-footer"><img src="img/icons/Ministerio-del-Interior_pluma.1ab9a7a7.png" alt="logo" class="logo" width="100px" style="margin: 25px 10px 50px 70px;"></div>
+            <div class="logo-footer"><img src="img/icons/Logo_DINE_negativo.a88f983e.png" alt="logo" class="logo" width="130px" style="margin: 25px 15px 15px 25px;"></div>
+            <div class="logo-footer"><img src="img/icons/logos_001-10.4430c8d5.png" alt="logo" class="logo" width="100px" style="margin: 20px 5px 70px;"></div>
+            <div class="text-footer">
+                <p id="text-footer" style="margin: 25px 35px 20px 20px; padding-right: 30px; line-height: 25px;">“Resultados Provisorios en base a telegramas recibidos (Art. 43 Ley 26571 y Art. 105 Ley 19945). Los porcentajes de las agrupaciones políticas son calculados sobre los votos válidos (PASO) conforme al art. 45 Ley 26.571 y afirmativos (Generales). No se incluyen los votos correspondientes a los electores residentes en el exterior ni privados de la libertad. Al usar este sitio usted acepta los <a href="página_en_blanco.html">Términos y Condiciones</a>.”</p>
             </div>
         </div>
     </footer>
