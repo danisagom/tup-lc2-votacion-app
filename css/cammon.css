@@ -53,6 +53,9 @@ h2 {
 h3 {
     font-size: 18px;
     color: var(--titulos);
+
+/* ---------------------------------- */
+
 }
 #logo-bar {
     padding: 0.5em;
@@ -74,13 +77,16 @@ h3 {
 }
 #consultar {
     color: white;
-    margin: 7px;
+    margin: 6px;
+    font-size: 10px;
 }
 button {
     color: white;
     padding: 5px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 0px 5px 8px;
+    font-size: 10px;
+    text-align: center;
 }
 
 

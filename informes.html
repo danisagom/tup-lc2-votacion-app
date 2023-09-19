@@ -19,7 +19,7 @@
         <div id="logo-bar"><a href="index.html"><img id="logo-dine" src="img/Logo_DINE_negativo.png" alt="logo" class="logo"></a></div>
         <!--Barra de menú principal-->
         <div id="menu-bar">
-            <div><p id="consultar">Consultar:</p></div>
+            <div><p id="consultar">CONSULTAR:</p></div>
             <div><a href="paso.html"><button id="paso-button">PASO</button></a></div>
             <div><a href="generales.html"><button id="gen-button">GENERALES</button></a></div>
             <div><a href="index.html"><button id="init-button">INICIO</button></a></div>
@@ -28,14 +28,21 @@
 
     <!-- Contenido principal de la página -->
     <main>
+        <!--Seccion para mensajes al usuario--> 
+        <section id="sec-messages"></section>
+            <div id="msg-container">
+                <div class="msg-divs" id="msg-1"><p class="msg-text"><i class="fa-thumbs-up"></i>Se agregó con éxito el resultado del informe</p></div>
+                <div class="msg-divs" id="msg-2"><p class="msg-text"><i class="fa-exclamation-triangle"></i>Error. Se produjo un error al intentar agregar resultados al informe</p></div>
+                <div class="msg-divs" id="msg-3"><p class="msg-text"><i class="fa-exclamation"></i>La operación no se pudo completar</p></div>
+            </div>
+
         <!--Seccion para el título de esta página-->
         <section id="sec-titulo">
             <h2>Reporte de Elecciones</h2>
             <p>Párrafo o subtítulo</p>
             <div>Imagen</div>
         </section>
-         <!--Seccion para mensajes al usuario--> 
-        <section id="sec-messages"></section>
+        
         <!--Seccion para contenido de la página-->
         <section id="sec-contenido">
             <div id="grilla">
