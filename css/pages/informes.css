@@ -31,10 +31,38 @@
     --mensaje-usuario-verde: #28a745;
     --mensaje-usuario-rojo: #dc3545;
 }
-/*#msg-container {
 
-}*/
-.msg-divs {
+/*BOTONES DE LA BARRA DE MENU*/
+#consultar {
+    color: white;
+    margin: 6px;
+    font-size: 10px;
+}
+button {
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 0px 5px 8px;
+    font-size: 10px;
+    text-align: center;
+}
+#paso-button {
+    background-color: var(--magenta);
+}
+#gen-button {
+    background-color: var(--celeste);
+}
+#init-button {
+    background-color: var(--gris-claro);
+    position: absolute;
+    right: 5px;
+}
+
+/* SECCIÓN MSJS DE USUARIO */
+#msg-container{
+    position: relative; top: 110px;
+}
+.msg-divs { 
     width: 400px;
     margin: 10px auto;
     padding: 5px;
@@ -59,18 +87,30 @@
 .msg-text {
     color: #FFffFF;
 }
+
+/*SECCIÓN TITULO*/
+section h1 {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    top: 120px;
+}
+
+/*SECCIÓN GRILLA*/
 #grid-container {
+    position: relative;
+    top: 110px;
     display: grid;
     grid-template-columns: 307.2px 102.4px 409.6px 204.8px;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto;
     border-style: solid;
     border-color: var(--borde-Grilla);
     border-width: 1px;
     border-radius: 15px;
     width: 1024px;
+    height: 250px;
     background-color: rgb(250, 250, 250);
-    margin: 0 auto 50 auto;
-
+    margin: 0 auto 0 auto;
 }
 
 .grid-thead {
@@ -83,6 +123,10 @@
     border-bottom-color: var(--borde-inferior-Grilla);
     border-width: 1px;
     border-bottom-style: solid;
+}
+
+#item-4 {
+    padding-left: 0%;
 }
 
 .grid-tbody {
@@ -113,6 +157,9 @@
     font-size: 10px;
     color: #FFF;
 }
+.svg-text {
+    color: #FFF;
+}
 
 #mesas-escrutadas {
     background-color: var(--celeste);
@@ -139,4 +186,7 @@
 
 .sub-item-8 {
     color: var(--textos);
+}
+.sub-item-8b {
+    padding-right: 80px;
 }

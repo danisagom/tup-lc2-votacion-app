@@ -34,15 +34,11 @@
     --mensaje-usuario-rojo: #dc3545;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-
 html {
     font-family: 'Roboto';
+}
+body{
+    margin: 0;
 }
 p {
     font-size: 12px;
@@ -60,73 +56,67 @@ h2 {
 h3 {
     font-size: 18px;
     color: var(--titulos);
+}
 
 /* ---------------------------------- */
 
-}
 #logo-bar {
     padding: 0.5em;
     background-color: var(--fondo-Cabecera);
     color: white;
-    margin: 0px auto auto;
-    /*width: 90%;*/
+    margin: 0 auto auto auto;
 }
+
 #menu-bar {
     display: flex;
     background-color: var(--fondo-Menu);
-    margin: auto;
     padding-top: 10px;
     width: 100%;
 }
+
 #logo-dine {
     width: 150px;
-    padding-left: 40px;
-}
-#consultar {
-    color: white;
-    margin: 6px;
-    font-size: 10px;
-}
-button {
-    color: white;
-    padding: 5px 15px;
-    border-radius: 5px;
-    margin: 0px 5px 8px;
-    font-size: 10px;
-    text-align: center;
+    position: relative;
+    left: 25px;
+    top: 2px;
 }
 
+/*PIE DE PAGINA*/
 
-
-.navbar-button
-{
-    background-color: var(--gris-claro);
-    position:fixed;
-    right:20vh;  
-}
-#paso-button {
-    background-color: var(--magenta);
-}
-#gen-button {
-    background-color: var(--celeste);
-}
-#init-button {
-    background-color: var(--gris-claro);
-    position:fixed;
-    right:2vh;
-}
-footer {
+#footer-container{
     position: absolute;
     bottom: 0;
-}
-#cont-footer {
     background-color: var(--fondo-Footer);
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
-#text-footer {
-    color: lightgray;
+
+.logo-footer{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-around;
+    position: relative;
+    left: 5%;
 }
+
+.img-footer{
+    height: 40px;
+    position: relative;
+    top:20%;
+
+}
+
+.text-footer {
+    color: lightgray;
+    width: 60%;
+}
+
+#texto-footer{
+    color: var(--texto-footer);
+}
+
 p a {
     color: lightgray;
 }
