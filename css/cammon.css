@@ -84,7 +84,7 @@ h3 {
 /*PIE DE PAGINA*/
 
 #footer-container{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background-color: var(--fondo-Footer);
     display: flex;
