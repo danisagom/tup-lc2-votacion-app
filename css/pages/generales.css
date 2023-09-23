@@ -31,10 +31,60 @@
     --mensaje-usuario-verde: #28a745;
     --mensaje-usuario-rojo: #dc3545;
 }
+
+body {
+    height: 1150px;
+}
+
+#init-button {
+    background-color: var(--gris-claro);
+    border-color: var(--gris-claro);
+    position: absolute;
+    right: 5px;
+    border-style: solid;
+}
+#init-button:hover {
+    color: var(--textos);
+}
+
+/* SECCIÓN MSJS DE USUARIO */
+
+.msg-divs { 
+    width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+}
+#msg-1 {
+    background-color: var(--mensaje-usuario-verde);
+}
+#msg-2 {
+    background-color: var(--mensaje-usuario-rojo);
+}
+#msg-3 {
+    background-color: var(--mensaje-usuario-amarillo);
+}
+.svg-icons {
+    fill: #FFffFF;
+    margin-right: 4px;
+}
+.msg-text {
+    color: #FFffFF;
+}
+
+/*Seccion de título*/
+.div-seccion-titulo {
+    width: 77%;
+    margin: 0 auto 0 auto;
+}
 .texto-path{
     font-size: 14px;
     color: var(--celeste);
 }
+
 .boton-agregar-informe{
     background-color: var(--gris-claro);
     color: white;
@@ -83,4 +133,217 @@
 }
 #boton-morado{
     background-color: var(--morado);
+}
+
+#Año {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    color: var(--celeste);
+    font-weight: bold;
+    outline: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#Cargo {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    color: var(--celeste);
+    font-weight: bold;
+    outline: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#Distrito {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    color: var(--celeste);
+    font-weight: bold;
+    outline: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.azul{
+    color:#4aaed6;
+    margin-left:20px;
+}
+.boton-redondo {
+    background-color: white; 
+    color: black; 
+    border: none; 
+    border-radius: 50px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+}
+
+/*--------------------------------------*/
+#recuadros {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    padding-bottom: 5%;
+}
+
+.primerTituloCuadro {
+    border-radius: 25px;
+    border: 1px var(--borde-Grilla) solid;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    margin-right: 1%;
+    width: 30%;
+    height: 350px;
+    overflow: auto;
+    font-family: sans-serif;
+}
+
+.primerTituloCuadro-textoVotos{
+    color: var(--gris-claro);
+    font-weight: lighter;
+}
+
+.segundoTituloCuadro {
+    border-radius: 25px;
+    border: 1px var(--borde-Grilla) solid;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-right: 1%;
+    width: 20%;
+    height: 350px;
+}
+
+.tercerTituloCuadro {
+    border-radius: 25px;
+    border: 1px var(--borde-Grilla) solid;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 20%;
+    height: 350px;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-right: 5%;
+    width: 25%;
+}
+
+.sec-titulo {
+    margin-left: 14%;
+    margin-top: 5%;
+}
+
+.chart-wrap {
+    --chart-width: 260px;
+    --grid-color: #aaa;
+    --bar-thickness: 25px;
+    --bar-rounded: 3px;
+    --bar-spacing: 10px;
+    font-family: sans-serif;
+    width: var(--chart-width);
+}
+
+.chart-wrap .title {
+    font-weight: bold;
+    padding: 1.8em 0 2.8em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.chart-wrap.horizontal .grid {
+    transform: rotate(-90deg);
+}
+
+.chart-wrap.horizontal .bar::after {
+    transform: rotate(45deg);
+    padding-top: 0px;
+    display: block;
+}
+
+.chart-wrap .grid {
+    margin-left: 50px;
+    position: relative;
+    padding: 5px 0 5px 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid var(--grid-color);
+    font-size: 10px;
+}
+
+.chart-wrap .grid::before {
+    font-size: 0.8em;
+    font-weight: bold;
+    content: '0%';
+    position: absolute;
+    left: -0.5em;
+    top: -1.5em;
+}
+
+.chart-wrap .grid::after {
+    font-size: 0.8em;
+    font-weight: bold;
+    content: '100%';
+    position: absolute;
+    right: -1.5em;
+    top: -1.5em;
+}
+
+.chart-wrap.horizontal .grid::before,
+.chart-wrap.horizontal .grid::after {
+    transform: rotate(90deg);
+}
+
+.chart-wrap .bar {
+    width: var(--bar-value);
+    height: var(--bar-thickness);
+    margin: var(--bar-spacing) 0;
+    background-color: var(--bar-color);
+    border-radius: 0 var(--bar-rounded) var(--bar-rounded) 0;
+}
+
+.chart-wrap .bar:hover {
+    opacity: 0.7;
+}
+
+.chart-wrap .bar::after {
+    content: attr(data-name);
+    margin-left: 100%;
+    padding: 10px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.progress {
+    height: 5%;
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+}
+
+.progress-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+.progress-bar-text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: var(--textos);
+    font-size: 9px;
+}
+
+.cuadro-texto{
+    margin: 0 20px;
 }
